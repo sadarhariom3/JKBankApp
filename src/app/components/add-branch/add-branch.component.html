@@ -1,0 +1,92 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <p class="h3 text-dark">Add Branch</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+          molestias temporibus esse minima, praesentium ab alias earum id, omnis,
+          voluptatem vero corporis inventore voluptatibus dicta ratione similique
+          qui facere iure.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!--Create Contact Forms-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <form (submit)="createSubmit()">
+          <div class="mb-2">
+            <input
+              [(ngModel)]="branch.branchId"
+              name="branchId"
+              type="number"
+              placeholder="Branch ID"
+              class="form-control"
+              required="true"
+            />
+          </div>
+  
+          <div class="mb-2">
+            <input
+              [(ngModel)]="branch.branchName"
+              name="branchName"
+              type="text"
+              placeholder="Branch Name"
+              class="form-control"
+              required="true"
+            />
+          </div>
+  
+          <div class="mb-2">
+            <input
+              [(ngModel)]="branch.ifscCode"
+              name="ifscCode"
+              type="text"
+              placeholder="IFSC Code"
+              class="form-control"
+              required="true"
+            />
+          </div>
+  
+          <div class="mb-2">
+            <input
+              [(ngModel)]="branch.branchCity"
+              name="branchCity"
+              type="text"
+              placeholder="Branch City"
+              class="form-control"
+              required="true"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+              [(ngModel)]="branch.branchState"
+              name="branchState"
+              type="text"
+              placeholder="Branch State"
+              required="true"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+              [(ngModel)]="branch.branchAddress"
+              name="branchAddress"
+              type="text"
+              placeholder="Branch Address"
+              required="true"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <input type="submit" value="Create" class="btn btn-danger" />
+            <a routerLink="/" class="btn btn-dark ms-2">Close</a>
+            <!--MS-2 = MARGIN START-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  

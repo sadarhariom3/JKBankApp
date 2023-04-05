@@ -1,0 +1,113 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <p class="h4 text-black">
+          Add Branch
+          <a class="btn btn-dark btn-sm" routerLink="/branch/add">
+            <i class="fa fa-plus"></i>ADD</a
+          >
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio iusto,
+          optio voluptatem numquam id quis exercitationem debitis illum tenetur
+          quibusdam expedita velit, obcaecati molestiae tempora mollitia,
+          voluptatum autem maxime magnam?
+        </p>
+        <form>
+          <div class="row">
+            <div class="col-md-8">
+              <div class="row">
+                <div class="col">
+                  <input
+                    class="form-control"
+                    placeholder="Search User"
+                    type="text"
+                  />
+                </div>
+                <div class="col">
+                  <input
+                    type="submit"
+                    class="btn btn-outline-dark"
+                    value="Search"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!--
+    <div *ngIf="errorMessage">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <p class="h4 text-danger">{{ errorMessage }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+  
+  <!--Cards-->
+  
+  <div class="container mt-3" *ngIf="branch.length > 0">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let br of branch">
+        <div class="card list-group-item-dark shadow-lg my-2">
+          <div class="card-body">
+            <div class="row align-items-center">
+              <div class="col-sm-10">
+                <ul class="list-group">
+                  <li class="list-group-item">
+                    BranchId: <span class="fw-bold">{{ br.branchId }}</span>
+                  </li>
+                  <li class="list-group-item">
+                    Name: <span class="fw-bold">{{ br.branchName }}</span>
+                  </li>
+                  <li class="list-group-item">
+                    IFSC Code: <span class="fw-bold">{{ br.ifscCode }}</span>
+                  </li>
+                  <li class="list-group-item">
+                    City: <span class="fw-bold">{{ br.branchCity }}</span>
+                  </li>
+                  <li class="list-group-item">
+                    State: <span class="fw-bold">{{ br.branchState }}</span>
+                  </li>
+                  <li class="list-group-item">
+                    Address:
+                    <span class="fw-bold">{{ br.branchAddress }}</span>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="col-sm-2 d-flex flex-column justify-content-center align-items-center"
+              >
+                <a
+                  class="btn btn-warning my-1"
+                  routerLink="/branch/view/{{ br.id }}"
+                >
+                  <i class="fa fa-eye"></i>
+                </a>
+                <a
+                  class="btn btn-primary my-1"
+                  routerLink="/branch/edit/{{ br.id }}"
+                >
+                  <i class="fa fa-pen"></i>
+                </a>
+                <button
+                  class="btn btn-danger"
+                  (click)="clickDeleteContact(br.id)"
+                >
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

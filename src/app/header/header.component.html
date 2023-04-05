@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand navbar-dark bg-dark px-2">
+    <div class="side-nav-button p-2 me-3 text-light" (click)="SideNavToggle()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <a class="navbar-brand px-4" href="#">
+        <img src="https://th.bing.com/th/id/OIP.WedEu2A9PVVgVy_WSgbnqwHaEG?pid=ImgDet&rs=1" alt="" width="30" height="24">
+        JK BANK</a>
+
+        <div class="container-fluid">
+            <!-- Links -->
+            <ul class="nav justify-content-end ">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Net-Banking</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+    <div class="profile-logo dropstart">
+        <button class="btn btn-outline-light" data-bs-toggle="dropdown"><i class="fa fa-user-circle-o" aria-hidden="true"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-dark">
+            <li><a href="#" class="dropdown">Sign UP</a></li>
+            <li><a routerLink="/login" class="dropdown">Log In</a></li>
+            <li><a href="#" class="dropdown">Your Profile</a></li>
+            <li><a href="#" class="dropdown">Log Out</a></li>
+        </ul>
+    </div>
+
+</nav>

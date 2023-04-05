@@ -1,0 +1,99 @@
+<div class="container mt-3">
+    <div class="row">
+      <div class="col">
+        <p class="h3 text-dark">Edit Branch</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem
+          molestias temporibus esse minima, praesentium ab alias earum id, omnis,
+          voluptatem vero corporis inventore voluptatibus dicta ratione similique
+          qui facere iure.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <!--Create Contact Forms-->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <form (submit)="updateForm()">
+          <div class="mb-2">
+            <input
+              required="true"
+              [(ngModel)]="branch.branchId"
+              [value]="branch.branchId"
+              name="branchId"
+              type="text"
+              placeholder="Name"
+              class="form-control"
+            />
+          </div>
+  
+          <div class="mb-2">
+            <input
+              required="true"
+              [(ngModel)]="branch.branchName"
+              [value]="branch.branchName"
+              name="branchName"
+              type="email"
+              placeholder="Email"
+              class="form-control"
+            />
+          </div>
+  
+          <div class="mb-2">
+            <input
+              required="true"
+              [(ngModel)]="branch.ifscCode"
+              [value]="branch.ifscCode"
+              name="ifscCode"
+              type="text"
+              placeholder="Mobile"
+              class="form-control"
+            />
+          </div>
+  
+          <div class="mb-2">
+            <input
+              required="true"
+              [(ngModel)]="branch.branchCity"
+              [value]="branch.branchCity"
+              name="branchCity"
+              type="text"
+              placeholder="Company"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+              required="true"
+              [(ngModel)]="branch.branchState"
+              [value]="branch.branchState"
+              name="branchState"
+              type="text"
+              placeholder="Title"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <input
+              required="true"
+              [(ngModel)]="branch.branchAddress"
+              [value]="branch.branchAddress"
+              name="branchAddress"
+              type="text"
+              placeholder="Title"
+              class="form-control"
+            />
+          </div>
+          <div class="mb-2">
+            <input type="submit" value="Edit" class="btn btn-danger" />
+            <a routerLink="/" class="btn btn-dark ms-2">Close</a>
+            <!--MS-2 = MARGIN START-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
