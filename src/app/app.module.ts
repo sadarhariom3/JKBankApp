@@ -20,6 +20,10 @@ import { BranchComponent } from './branch/branch.component';
 import { LoginComponent } from './login/login.component';
 import { OAuthModule } from 'angular-oauth2-oidc';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GoogleSignInComponent } from './login/google-sign-in/google-sign-in.component';
+import { CustomerComponent } from './customer/customer.component';
+import { DetailsComponent } from './details/details.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -39,13 +43,17 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     ViewBranchComponent,
     BranchComponent,
     LoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    GoogleSignInComponent,
+    CustomerComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    ReactiveFormsModule,
     OAuthModule.forRoot()
   ],
   providers: [],

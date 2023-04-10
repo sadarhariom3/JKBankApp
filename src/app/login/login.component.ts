@@ -8,18 +8,5 @@ import { GoogleApiService } from '../services/google-api.service';
 })
 export class LoginComponent {
   
-  userinfo:any;
-
-  constructor(private readonly googleApi : GoogleApiService) {
-
-  }
-
-  login() {
-    this.googleApi.login();
-    // this.googleApi.userProfileSubject.subscribe(info => {
-    // this.userinfo = info;
-//  })
-}
-
 
 }

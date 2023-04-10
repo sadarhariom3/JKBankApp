@@ -9,11 +9,14 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { BranchComponent } from './branch/branch.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { GoogleSignInComponent } from './login/google-sign-in/google-sign-in.component';
+import { CustomerComponent } from './customer/customer.component';
 
 const routes: Routes = [
    {path:'dash',component: DashboardComponent},
-  // {path:'customer',component: CustomerComponent },
+  {path:'customer',component: CustomerComponent },
   { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: 'login/google-sign-in', component: GoogleSignInComponent },
    {path:'branch',component: BranchComponent },
   {path:'transaction',component: TransactionComponent },
    {path:'login',component: LoginComponent},
